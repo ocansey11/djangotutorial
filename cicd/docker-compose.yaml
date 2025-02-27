@@ -3,7 +3,8 @@ version: "3.8"
 services:
   # Jenkins: the CI/CD server that will build your image when changes are merged.
   jenkins:
-    image: jenkins/jenkins:lts
+    image: jenkinspython
+    build: .  
     container_name: jenkins
     ports:
       - "8080:8080"   # Jenkins UI
